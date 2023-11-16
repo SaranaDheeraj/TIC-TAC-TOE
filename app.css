@@ -1,0 +1,18 @@
+.body{
+  background-color: antiquewhite;
+}
+
+.board {
+  height: 100vh;
+  width: 100wh;
+}
+
+.col-4{
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 2.5em;
+}
+
+
