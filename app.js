@@ -48,11 +48,10 @@ cells.forEach((box) => {
       if (checkWinner()) {
         updateBodyColor(currentPlayer);
         resultMessage.textContent = `${currentPlayer} wins!`;
-        resetButton.classList.add('mt-5');
         resetButton.style.display = 'block';
       } else if (isBoardFull()) {
         resultMessage.textContent = 'It\'s a draw!';
-        
+        resetButton.style.display = 'block';
       } else {
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
         turn.textContent = currentPlayer;
